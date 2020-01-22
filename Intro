@@ -1,0 +1,18 @@
+quanah:$ pwd
+/home/lindsawi
+quanah:$ cd /lustre/scratch/jenjense/200Mammals
+-bash: cd: /lustre/scratch/jenjense/200Mammals: No such file or directory
+quanah:$ cd /lustre/scratch/jenjense/200Mammals
+-bash: cd: /lustre/scratch/jenjense/200Mammals: No such file or directory
+quanah:$ cd /lustre/scratch/jenjense
+quanah:/lustre/scratch/jenjense$ ls
+200mammals      200mammals_rnd1_jenjense  bat1K        Louisiana  MYOSEP-sequences  USDA
+200Mammals-old  200m-old                  gge_scripts  macro      Old200M
+quanah:/lustre/scratch/jenjense$ cd 200mammals
+quanah:/lustre/scratch/jenjense/200mammals$ ls -1 | wc -l
+2
+quanah:/lustre/scratch/jenjense/200mammals$ ^C
+quanah:/lustre/scratch/jenjense/200mammals$ cd /lustre/scratch/lindsawi
+quanah:/lustre/scratch/lindsawi$ mkdir testing
+quanah:/lustre/scratch/lindsawi$ ls
+testing
