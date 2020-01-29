@@ -1,0 +1,39 @@
+# Population Estimation 
+# Calculate Population Estimation
+# Lindsay Williams 
+# January 29, 2020
+
+# import modules
+# Add varaibles
+# Ask for input
+# Calculate population estimation
+# print results
+
+#initial population
+initial_population = 307357870
+
+# 1 year = 365 days = 24 hours * 60 minutes * 365 days = 8760 minutes * 60 seconds = 31536000 seconds in one year
+numberofsecondsinOneyear = 31536000
+
+#Variables
+#Birth every 7 seconds
+births_per_year = int(numberofsecondsinOneyear) / 7
+#print(births_per_year)
+
+#Death every 13 seconds
+deaths_per_year = int(numberofsecondsinOneyear) / 13 
+#print(deaths_per_year)
+
+#Immigration every 35 seconds
+immigrants_per_year = int(numberofsecondsinOneyear) / 35
+#print(deaths_per_year)
+
+ratePeryear = births_per_year - deaths_per_year + immigrants_per_year
+#print(ratePeryear)
+
+
+#Inputs
+year_input = input("What year would you like to determine population estimation for?" )
+
+current_population = int(initial_population) + int(year_input)*int(ratePeryear)
+print(current_population)
