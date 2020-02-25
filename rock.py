@@ -15,27 +15,27 @@ computer = c[randint(0,2)]
 player = False
 
 while player == False:
-#set player to True
+#set true rock, paper, scissors statements
     player = input("Do you want to choose rock, paper, or scissors?")
     if player == computer:
-        print("Tie! Play again! ")
+        print("tie! rematch! ")
     elif player == "rock":
         if computer == "paper":
-            print("You lose!", computer, "covers", player)
+            print("you lose!", computer, "covers", player)
         else:
-            print("You won!", player, "smashes", computer)
+            print("you won!", player, "smashes", computer)
     elif player == "paper":
         if computer == "scissors":
-            print("You lose!", computer, "cuts", player)
+            print("you lose!", computer, "cuts", player)
         else:
             print("You won!", player, "covers", computer)
     elif player == "scissors":
         if computer == "rock":
-            print("You lose!", computer, "smashes", player)
+            print("you lose!", computer, "smashes", player)
         else:
-            print("You won!", player, "cut", computer)
+            print("you won!", player, "cuts", computer)
     else:
         print("What item did you want to choose again?")
-    #player was set to True, but we want it to be False so the loop continues
+    #player was set to True, but want it to be False so loop continues
     player = False
     computer = c[randint(0,2)]
