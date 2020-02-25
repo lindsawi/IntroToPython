@@ -1,7 +1,7 @@
 # Rock.py
 # Play rock, paper, scissors
 # Lindsay Williams 
-# Feb 12, 2020
+# Feb 25, 2020
 
 from random import randint
 
