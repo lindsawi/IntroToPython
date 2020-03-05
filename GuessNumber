@@ -1,0 +1,44 @@
+#Guess a Number
+#Lindsay Williams
+#March 4, 2020
+#Guess a Number
+
+###################
+#1. Import random
+#2. Computer Choose random number 
+#3. Ask user to choose number
+#4. Rank number as higher/lower/equal
+#5. print
+###################
+
+#Introduce game
+print ("In this game you will try to guess a number between 1 and 50", "\n", "That the computer has previously chosen... Go!")
+print("###################")
+
+###################
+#1. Import random  
+import random
+
+###################
+#2. Computer choose a number
+n = random.randint(0,50)
+
+###################
+#3. User choose a number
+user = int(input("Please pick a number between 1 and 50..."))
+print("###################")
+
+###################
+#4. Computer rank number higher/lower/equal 
+
+while n != "user":
+    if user > n:
+        print ("The number guessed is too high")
+        user = int(input("Enter another number from 1 to 50... "))
+    elif user < n:
+        print ("The number guessed is too low")
+        user = int(input("Enter another number from 1 to 50... "))
+    else:
+        print ("You guessed it right!")
+        break
+    print
