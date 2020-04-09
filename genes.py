@@ -1,0 +1,51 @@
+# Lindsay Williams
+# April 8, 2020
+# Genes.py
+
+#########################################
+##1. Generate a random RNA sequence into a STRING 1000 base pairs long
+##2. Create list of genes that are separated by start codon
+##3. Create list of large genes (>50bp) 
+##4. Determine length of large genes
+#########################################
+
+#########################################
+##1. 1000 bp RNA sequence
+########################
+print("#########################################")
+print("Here is the random RNA sequence:")
+import random
+bases = ['A', 'U', 'G', 'C']
+rna = random.choices(bases, k=1000)
+mrna = ''.join(rna)
+print(mrna)
+print("#########################################")
+#########################################
+
+#########################################
+##2. List of genes separated by 'AUG'
+genes = mrna.split('AUG')
+count = len(genes)
+print("There are " , count, "genes") 
+print("#########################################")
+#########################################
+
+#########################################
+##3. List of large genes
+big=[]
+##because defined as sequence earlier
+for i in genes:
+    if len(i) > 50:
+        big.append(i)
+##yield(i)
+print("This is the list of large genes, \n", big)
+print("#########################################")
+#########################################
+
+#########################################
+##4. Calculate length of large genes
+print("The lengths of each long gene (over 50 bp) after filtering are...")
+for n in big:
+    print(len(n))
+print("#########################################")
+#########################################
